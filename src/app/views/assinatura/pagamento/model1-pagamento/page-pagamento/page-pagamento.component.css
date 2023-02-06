@@ -1,0 +1,54 @@
+.title-Pag {
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.bordP {
+    width: 680px;
+}
+
+.btn-entrarP {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 25px;
+
+}
+
+.bordP2 {
+    width: 700px;
+    align-items: center;
+}
+
+.bordP3 {
+    width: 360px;
+    align-items: center;
+}
+
+.bordP4 {
+    width: 160px;
+    align-items: center;
+}
+
+.bordP5 {
+    width: 130px;
+    align-items: center;
+}
+
+.btn-pagarPP {
+    padding-top: 10px;
+    text-align: right;
+}
+
+.btn-pagarP {
+    padding-top: 10px;
+    text-align: left;
+
+}
+
+.footAbs {
+    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

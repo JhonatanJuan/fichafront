@@ -1,0 +1,35 @@
+.initialS {
+    display: flex;
+    align-items: center;
+}
+
+.initialS a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px;
+    padding-right: 35px;
+    padding-left: 20px;
+}
+
+.initialS .logoS {
+    max-height: 550px;
+}
+
+.tituloS{
+    text-align: left;
+    font-weight: 500;
+    line-height: 2.5;
+}
+
+.textoTituloS{
+    text-align: left;
+    font-weight: 400;
+}
+
+.homeS {
+    padding-left: 1em;
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 1.4;
+}

@@ -1,0 +1,64 @@
+<body>
+    <app-preloader>
+        <mat-card>
+            <mat-card-content class="mat-elevation-z2">
+                <mat-card-title class="titulo-principalE">
+                    <p> Estórias</p>
+                </mat-card-title>
+                <div fxLayout="row">
+                    <div fxFlex="25">
+                        <mat-form-field appearance="fill" class="bordE">
+                            <mat-label>Selecione uma Categoria</mat-label>
+                            <mat-select>
+                                <mat-option value="one">Categoria A</mat-option>
+                                <mat-option value="two">Categoria B</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div fxFlex="45">
+                        <mat-form-field appearance="fill" class="bordE2">
+                            <mat-label>Buscar Estórias</mat-label>
+                            <input matInput #input placeholder="Categorias Estórias">
+                        </mat-form-field>
+                    </div>
+                    <div fxFlex="20" style="padding-top: 2px;">
+                        <button class="bordE3" mat-raised-button color="primary">Pesquisar</button>
+                    </div>
+                </div>
+            </mat-card-content>
+
+            <mat-card-content>
+                <div class="row">
+                    <div class="col-md-4" *ngFor="let item of listaEstorias">
+                        <div class="ex-cardE">
+                            <img mat-card-image [src]="item.imagemEstorias" alt="History">
+                            <mat-card-content>
+                                <mat-card-title>{{item.tituloEstorias}}</mat-card-title>
+                                <p>{{item.textoEstorias}}
+                                </p>
+                                <p class="infoEtext">
+                                    Escrito por: {{item.nameUsuarioCriador}}
+                                </p>
+                            </mat-card-content>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+
+            <mat-card-content>
+                <div class="col">
+                    <div class="row">
+                        <div fxFlex="65">
+                            <mat-card-content>
+                                <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+                                    aria-label="Select page">
+                                </mat-paginator>
+                            </mat-card-content>
+                        </div>
+                        <div fxFlex="35"></div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </app-preloader>
+</body>

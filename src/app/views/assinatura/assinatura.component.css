@@ -1,0 +1,203 @@
+.principal {
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+}
+
+.principal::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 6px;
+    position: fixed;
+}
+
+.principal::-webkit-scrollbar {
+    border-radius: 6px;
+    width: 8px;
+    position: fixed;
+}
+
+.text-voltar {
+    text-align: end;
+    padding: 10px 20px;
+}
+
+.text-voltar h2 {
+    font-family: system-ui;
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: system-ui;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.pagamento {
+    height: 100vh;
+    width: 100vw;
+    align-self: center;
+}
+
+.card-dados {
+    align-self: center;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 30px 0;
+    background-color: transparent;
+    display: flex;
+}
+
+.plano-card {
+    align-self: center;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0px 0px 10px #cdcdcd;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.coluna01,
+.coluna02,
+.coluna03,
+.coluna04 {
+    padding: 10px;
+}
+
+.recomendadoB {
+    background-image: linear-gradient(45deg, #ece000, #f1f1f1);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-self: center;
+}
+
+.recomendadoB p {
+    margin: 0;
+    font-size: 16px;
+    font-family: system-ui;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.recomendado {
+    background-image: linear-gradient(45deg, #0afffb, #f1f1f1);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-self: center;
+}
+
+.recomendado p {
+    margin: 0;
+    font-size: 16px;
+    font-family: system-ui;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.infos-compl {
+    padding: 15px;
+}
+
+.title-planos h3 {
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #585858;
+}
+
+.info-planos p {
+    font-size: 13px;
+    color: #767676;
+    text-align: center;
+    font-family: system-ui;
+}
+
+.valor-planos h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: system-ui;
+    color: #000000;
+}
+
+.valor-planos p {
+    text-align: center;
+    font-family: system-ui;
+    color: #008463;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.detalhes-colum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.item {
+    display: flex;
+}
+
+.item span {
+    font-size: 18px;
+    align-self: center;
+    color: #1cec00;
+}
+
+.item a {
+    font-size: 18px;
+    align-self: center;
+    color: #f70000;
+}
+
+.item p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+    margin: 0;
+    color: #000000;
+}
+
+.btn-avancar {
+    background-color: #515258;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.botao-finalizar {
+    padding-top: 10px;
+}
+
+.regB {
+    padding-left: 15px !important;
+    padding-right: 5px !important;
+    padding-top: 10px !important;
+}
+
+

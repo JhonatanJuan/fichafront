@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="pt-br">
+
+<body>
+    <app-preloader>
+        <mat-card class="mat-elevation-z3" style="background: #f7f6f6; color:black !important;">
+
+            <div class=" w3-col l12 m12 s12">
+
+                <div style="padding-top: 10px;">
+                    <div style="text-align: center;">
+                        <img src="assets/img/FichaRPG.png" style="width: 500px; text-align: center;">
+                    </div>
+                </div>
+
+                <div class="card-dados w3-col l12 m12 s12" id="planos-consultar">
+                    <mat-tab-group>
+                        <mat-tab label="ASSINATURAS" style="border: 1px solid #ddd;">
+                            <h2 class="title">Planos por assinatura</h2>
+                            <div class="principal-cartao w3-col l12 m12 s12" style="border-radius: 15px;">
+                                <div class="dados-cartao w3-col l12 m12 s12" style="display: flex; flex-wrap: wrap;">
+
+                                    <!-- COLUNA UM -->
+
+                                    <div class="coluna01 w3-col l3 m3 s12">
+                                        <div class="plano-card w3-col l12 m12 s12">
+                                            <div style="padding-top: 20px; padding-bottom: 25px;">
+                                            </div>
+
+                                            <div class="infos-compl">
+                                                <div class="title-planos">
+                                                    <h3>Assinatura FREE</h3>
+                                                </div>
+
+                                                <div class="valor-planos">
+                                                    <h3>R$ 0</h3>
+                                                </div>
+                                            </div>
+
+                                            <mat-accordion>
+                                                <mat-expansion-panel hideToggle class="w3-col l12 m12 s12 regB">
+                                                    <mat-expansion-panel-header>
+                                                        <mat-panel-title>
+                                                            MAIS DETALHES
+                                                        </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <div class="infos-detalhes w3-col l12 m12 s12">
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>1 Estória</p>
+                                                            </div>
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>1 Ficha</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <a class="material-icons">
+                                                                    close</a>
+                                                                <p>Sem Participação do Sorteio Mensal</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </mat-expansion-panel>
+                                                <mat-expansion-panel (opened)="panelOpenState = true"
+                                                    (closed)="panelOpenState = false">
+                                                </mat-expansion-panel>
+                                            </mat-accordion>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- COLUNA DOIS -->
+
+                                    <div class="coluna02 w3-col l3 m3 s12">
+                                        <div class="plano-card w3-col l12 m12 s12">
+                                            <div style="padding-top: 20px; padding-bottom: 25px;">
+                                            </div>
+
+                                            <div class="infos-compl">
+                                                <div class="title-planos">
+                                                    <h3>Assinatura Básica</h3>
+                                                </div>
+                                                <div class="info-planos">
+                                                    <p>
+                                                    </p>
+                                                </div>
+                                                <div class="valor-planos">
+                                                    <h3>R$ 10,00</h3>
+                                                </div>
+                                            </div>
+
+                                            <mat-accordion>
+                                                <mat-expansion-panel hideToggle class="w3-col l12 m12 s12 regB">
+                                                    <mat-expansion-panel-header>
+                                                        <mat-panel-title>
+                                                            MAIS DETALHES
+                                                        </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <div class="infos-detalhes w3-col l12 m12 s12">
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>10 Fichas</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>10 Estória</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>Pode Criar Estórias</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <a class="material-icons">
+                                                                    close</a>
+                                                                <p>Sem Participação do Sorteio Mensal</p>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="botao-finalizar w3-col l12 m12 s12"
+                                                            style="text-align: center;">
+                                                            <button mat-button (click)="openPagamento()"
+                                                                class="w3-col l12 m12 s12 btn-avancar">ASSINAR</button>
+                                                        </div>
+                                                    </div>
+                                                </mat-expansion-panel>
+                                                <mat-expansion-panel (opened)="panelOpenState = true"
+                                                    (closed)="panelOpenState = false">
+                                                </mat-expansion-panel>
+                                            </mat-accordion>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- COLUNA TRÊS -->
+
+                                    <div class="coluna03 w3-col l3 m3 s12" style="padding: 15px;">
+                                        <div class="plano-card w3-col l12 m12 s12">
+                                            <div class="recomendadoB">
+                                                <p>Gold</p>
+                                            </div>
+
+                                            <div class="infos-compl">
+                                                <div class="title-planos">
+                                                    <h3>Assinatura GOLD</h3>
+                                                </div>
+
+                                                <div class="valor-planos">
+                                                    <h3>R$ 50,00</h3>
+                                                </div>
+                                            </div>
+
+                                            <mat-accordion>
+                                                <mat-expansion-panel hideToggle class="w3-col l12 m12 s12 regB">
+                                                    <mat-expansion-panel-header>
+                                                        <mat-panel-title>
+                                                            MAIS DETALHES
+                                                        </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <div class="infos-detalhes w3-col l12 m12 s12">
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>50 Fichas</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>50 Estórias</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>Pode Criar Estórias</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>Pode Criar Campanha Paga</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>Com Participação dos Sorteios Mensais</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="botao-finalizar w3-col l12 m12 s12"
+                                                            style="text-align: center;">
+                                                            <button mat-button (click)="openPagamento()"
+                                                                class="w3-col l12 m12 s12 btn-avancar">ASSINAR</button>
+                                                        </div>
+                                                    </div>
+                                                </mat-expansion-panel>
+                                                <mat-expansion-panel (opened)="panelOpenState = true"
+                                                    (closed)="panelOpenState = false">
+                                                </mat-expansion-panel>
+                                            </mat-accordion>
+
+                                        </div>
+
+                                    </div>
+
+                                    <!-- COLUNA QUATRO -->
+
+                                    <div class="coluna04 w3-col l3 m3 s12" style="padding: 15px;">
+                                        <div class="plano-card w3-col l12 m12 s12">
+                                            <div class="recomendado">
+                                                <p>Diamond</p>
+                                            </div>
+
+                                            <div class="infos-compl">
+                                                <div class="title-planos">
+                                                    <h3>Assinatura DIAMOND</h3>
+                                                </div>
+                                                <div class="valor-planos">
+                                                    <h3>R$ 200,00</h3>
+                                                </div>
+                                            </div>
+
+                                            <mat-accordion>
+                                                <mat-expansion-panel hideToggle class="w3-col l12 m12 s12 regB">
+                                                    <mat-expansion-panel-header>
+                                                        <mat-panel-title>
+                                                            MAIS DETALHES
+                                                        </mat-panel-title>
+                                                    </mat-expansion-panel-header>
+                                                    <div class="infos-detalhes w3-col l12 m12 s12">
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>Fichas ILIMITADAS</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>Estórias ILIMITADAS</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>Pode Criar Estórias</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>Pode Criar Campanha Paga</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="detalhes-colum w3-col l12 m12 s12">
+                                                            <div class="item w3-col l6 m6 s12">
+                                                                <span class="material-icons">
+                                                                    check</span>
+                                                                <p>Com Participação dos Sorteios Mensais</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="botao-finalizar w3-col l12 m12 s12"
+                                                            style="text-align: center;">
+                                                            <button mat-button (click)="openPagamento()"
+                                                                class="w3-col l12 m12 s12 btn-avancar">ASSINAR</button>
+                                                        </div>
+                                                    </div>
+                                                </mat-expansion-panel>
+                                                <mat-expansion-panel (opened)="panelOpenState = true"
+                                                    (closed)="panelOpenState = false">
+                                                </mat-expansion-panel>
+                                            </mat-accordion>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </mat-tab>
+
+                    </mat-tab-group>
+                </div>
+            </div>
+
+        </mat-card>
+    </app-preloader>
+</body>

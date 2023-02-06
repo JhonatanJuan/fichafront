@@ -1,0 +1,44 @@
+<mat-toolbar class="headerZ fontZ backgroundZ">
+    <span>
+        <a routerLink="/">
+            <img class="logoZ" src="assets/img/FichaRPG.png" alt="FichaRPG">
+        </a>
+    </span>
+    <section>
+        <div class="exbutton-row title-groupZ">
+            <span class="title-groupZ" style="padding-left: 5.6em">
+                <button class="title-groupZ" mat-stroked-button routerLink="/"><i class="material-icons">castle</i>Início</button>
+            </span>
+            <span class="title-groupZ">
+                <button class="title-groupZ" mat-stroked-button routerLink="/sobre"><i class="material-icons">speaker_notes</i>Sobre</button>
+            </span>
+
+            <span class="title-groupZ">
+                <button class="title-groupZ" mat-stroked-button routerLink="/estorias"><i class="material-icons">public</i>Estórias</button>
+            </span>
+
+            <span class="title-groupZ">
+                <button class="title-groupZ" mat-stroked-button routerLink="/assinatura"><i class="material-icons">create</i>Assinatura</button>
+            </span>
+
+            <span class="title-groupZ">
+                <button class="title-groupZ" mat-stroked-button routerLink="/info"><i class="material-icons">quiz</i>O que é RPG?</button>
+            </span>
+
+            <span class="title-groupZ">
+                <button class="title-groupZ" mat-stroked-button routerLink="/"><i class="material-icons">hardware</i>Sessões</button>
+            </span>
+
+            <span class="title-groupZ" style="padding-left: 8rem;">
+                <button class="title-groupZ" mat-stroked-button routerLink="/login"><i class="material-icons">account_circle</i>Entrar</button>
+            </span>
+        </div>
+
+    </section>
+
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav-content class="contentZ">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

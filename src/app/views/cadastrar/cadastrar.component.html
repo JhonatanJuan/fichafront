@@ -1,0 +1,114 @@
+<body>
+    <app-preloader>
+        <div class="principalCad w3-col l12 m12 s12">
+
+            <div class="dados-cadastraisCad w3-col l10 m10 s10">
+
+                <mat-card class="card-dadosCad w3-col l5 m5 s12">
+                    <div style="text-align: center;">
+                        <button (click)="Login()" class="btn-closeCad">X</button>
+                    </div>
+                    <div class="titleCad">
+                        <h1>Crie sua conta.</h1>
+                    </div>
+
+                    <mat-stepper style="border-radius: 10px;">
+                        <mat-step style="display: block; border-radius: 10px;">
+                            <form class="w3-col l12 m12 s12" style="display: block;">
+                                <div class="dados-clienteCad">
+                                    <mat-form-field appearance="outline" style="width: 100%;">
+                                        <mat-label> Nome </mat-label>
+                                        <input matInput placeholder="Digite seu Nome completo" type="text">
+                                    </mat-form-field>
+                                </div>
+                                <div class="dados-clienteCad">
+                                    <mat-form-field appearance="outline" style="width: 100%;">
+                                        <mat-label> CPF </mat-label>
+                                        <input type="tel" name="cpf" id="cpf" formControlName='cpf'
+                                            mask="000.000.000-00" matInput placeholder="Digite seu CPF">
+                                    </mat-form-field>
+                                </div>
+                                <div class="dados-clienteCad">
+                                    <mat-form-field appearance="outline" style="width: 100%;">
+                                        <mat-label> Email </mat-label>
+                                        <input matInput placeholder="Digite seu email" type="email">
+                                    </mat-form-field>
+                                </div>
+                                <div class="dados-clienteCad">
+                                    <mat-form-field appearance="outline" style="width: 100%;">
+                                        <mat-label> Telefone </mat-label>
+                                        <input type="tel" name="telefone" id="telefone" formControlName='telefone'
+                                            mask="(00) 0 0000-0000" matInput placeholder="Digite seu telefone">
+                                    </mat-form-field>
+                                </div>
+
+                                <p class="termosCad"> Ao se cadastrar você está aceitando os Termos de Uso</p>
+
+                            </form>
+
+                            <div class="botao-enviar w3-col l12 m12 s12" style="text-align: center;">
+                                <button mat-button matStepperNext
+                                    class="w3-col l12 m12 s12 btn-avancarCad">AVANÇAR</button>
+                            </div>
+
+                            <div class="w3-col l12 m12 s12" style="text-align: center;">
+                                <p class="termosCad" style="padding-top: 20px; color: rgb(156, 156, 156);"> Já possui
+                                    conta?<a href="/login" style="padding-left: 5px; color: #003880;">Clique Aqui!</a>
+                                </p>
+                            </div>
+                        </mat-step>
+
+                        <mat-step label="" state="chat">
+                            <form class="w3-col l12 m12 s12" style="display: block;">
+                                <div class="dados-clienteCad">
+                                    <mat-form-field appearance="outline" style="width: 100%;">
+                                        <mat-label> Endereço </mat-label>
+                                        <input matInput placeholder="Digite seu Nome completo" type="text">
+                                    </mat-form-field>
+                                </div>
+                                <div class="dados-clienteCad">
+                                    <mat-form-field appearance="outline" style="width: 100%;">
+                                        <mat-label> CEP </mat-label>
+                                        <input type="cep" name="cep" id="cep" formControlName='cep' mask="00 000-000"
+                                            placeholder="Digite seu CEP" matInput>
+                                    </mat-form-field>
+                                </div>
+                                <div class="dados-clienteCad">
+                                    <mat-form-field appearance="outline" style="width: 100%;">
+                                        <mat-label> Senha </mat-label>
+                                        <input matInput placeholder="Digite seu email" type="password">
+                                    </mat-form-field>
+                                </div>
+                                <div class="dados-clienteCad">
+                                    <mat-form-field appearance="outline" style="width: 100%;">
+                                        <mat-label> Confirmar Senha </mat-label>
+                                        <input matInput placeholder="Digite seu telefone" type="password">
+                                    </mat-form-field>
+                                </div>
+
+                                <p class="termosCad"> Ao se cadastrar você está aceitando os Termos de Uso</p>
+
+                            </form>
+
+                            <div class="w3-col l12 m12 s12"
+                                style="justify-content: space-between; display: flex; padding: 10px 0;">
+                                <button mat-button matStepperPrevious class="btn-avancarCad2">VOLTAR</button>
+                                <button (click)="Assinatura()" mat-button matStepperNext
+                                    class="btn-avancarCad2">AVANÇAR</button>
+                            </div>
+                        </mat-step>
+                        <!-- Icon overrides. -->
+                        <!-- <ng-template matStepperIcon="phone">
+                            <mat-icon>call_end</mat-icon>
+                        </ng-template>
+                        <ng-template matStepperIcon="chat">
+                            <mat-icon>forum</mat-icon>
+                        </ng-template> -->
+                    </mat-stepper>
+
+                </mat-card>
+
+            </div>
+        </div>
+    </app-preloader>
+</body>

@@ -1,0 +1,129 @@
+.titleCard {
+    text-align: center;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card-text {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.titulo-principalB {
+    text-align: left;
+    font-weight: 500;
+    line-height: 2.5;
+}
+
+.ex-card {
+    max-width: 400px;
+}
+
+.initial {
+    display: flex;
+    align-items: center;
+}
+
+.initial a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px;
+    padding-right: 50px;
+}
+
+.logo {
+    background: #344148;
+}
+
+.tituloB {
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.homeEx {
+    padding-left: 1.2em;
+    font-size: 6rem;
+    line-height: 1.4;
+}
+
+.homeExI {
+    padding-left: 1em;
+    font-size: 6rem;
+}
+
+.headerB {
+    display: flex;
+    align-items: center;
+}
+
+.headerB a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.headerB .logo {
+    max-height: 150px;
+}
+
+.headerB .title-group {
+    padding-left: 1.5em;
+}
+
+.headerB .title-group i {
+    padding-right: 5px;
+}
+
+.fontB {
+    font-size: 0.5rem;
+}
+
+.backgroundB {
+    background: #fff;
+}
+
+.btn-entrar {
+    font-size: 2rem;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.btn-entrarb {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.textoTituloB {
+    text-align: left;
+    font-weight: 400;
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+.example-header-image {
+    max-height: 400px;
+}
+
+.imgRedonda {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.titulo-imgR {
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.8;
+    font-size: 1.3rem;
+}

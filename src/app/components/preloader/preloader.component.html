@@ -1,0 +1,9 @@
+<!-- preloader.component.html -->
+<div class="preloader" *ngIf="showLoader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
+  
+  <ng-content *ngIf="!showLoader"></ng-content>

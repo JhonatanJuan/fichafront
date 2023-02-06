@@ -1,0 +1,59 @@
+.headerZ {
+    display: flex;
+    align-items: center;
+}
+
+.headerZ a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.headerZ .logoZ {
+    padding-left: 15px;
+    max-height: 50px;
+}
+
+.headerZ .title-groupZ {
+    padding-left: 1.5em;
+}
+
+.headerZ .title-groupZ i {
+    padding-right: 5px;
+}
+
+.fontZ {
+    font-size: 0.5rem;
+}
+
+.backgroundZ {
+    background: #fff;
+}
+
+.contentZ {
+    padding: 3px;
+    background: #4d4d4d;
+}
+
+/* .btn {
+    background-color: #7b7b7b;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 13px;
+  } */
+
+/* .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+} */
+
+.exbutton-row {
+    display: table-cell;
+    max-width: 600px;
+}
+
+

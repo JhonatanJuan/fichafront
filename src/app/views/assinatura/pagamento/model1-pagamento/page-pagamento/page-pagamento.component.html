@@ -1,0 +1,111 @@
+<app-preloader>
+    <mat-card-content style="background: #fff; color:black !important;">
+        <div class="col l12 m12 s12">
+
+            <div>
+                <div style="text-align: center;">
+                    <img src="assets/img/FichaRPG.png" style="width: 300px; text-align: center;">
+                </div>
+            </div>
+        </div>
+
+        <mat-card-content>
+            <div class="row title-Pag">
+                <div class="col" style="text-align: center;">
+                    <a>Pagamento</a>
+                </div>
+                <div class="col" style="text-align: center;">
+                    <a>R$ 10,00</a>
+                </div>
+            </div>
+        </mat-card-content>
+        <div style="text-align: center;">
+            <mat-form-field appearance="fill" class="bordP">
+                <mat-label>Selecione sua forma de Pagamento</mat-label>
+                <mat-select>
+                    <mat-option (click)="onMostrarPix()" value="one">PIX</mat-option>
+                    <mat-option (click)="onMostrarCartao()" value="two">Cartão de Crédito</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <mat-card-content [hidden]="!mostrarPix">
+            <div class="row" style="text-align: center;">
+                <div class="col" style="text-align: right; padding-top: 20px; padding-right: 15px;">
+                    <img src="assets/img/pix.png" style="width: 200px;">
+                </div>
+                <div class="col btn-entrarP" flFlex>
+                    <button type="button" class="btn btn-entrar btn-secondary">Gerar Código PIX</button>
+                </div>
+            </div>
+            <mat-card-content style="padding-top: 35px;">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <form (ngSubmit)="onSubmit()">
+                            <re-captcha (resolved)="resolved($event)"
+                                siteKey="6Ld2Y0YkAAAAAFGCmdNKVngscS9NloKWFsqYXF1u"></re-captcha>
+                        </form>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </mat-card-content>
+
+        </mat-card-content>
+
+        <mat-card-content [hidden]="!mostrarCartao">
+            <div style="text-align: center;">
+                <mat-form-field appearance="fill" class="bordP2">
+                    <mat-label>Nome Completo</mat-label>
+                    <input matInput #input maxlength="30" placeholder="Nome Completo">
+                </mat-form-field>
+            </div>
+            <div class="row" [formGroup]="maskCartao" (ngSubmit)="onSubmit()" novalidate
+                style="text-align: center; padding-left: 15px;">
+                <div class="col-sm-6">
+                    <mat-form-field appearance="fill" class="bordP3">
+                        <mat-label for="numberCartao">Número do seu Cartão</mat-label>
+                        <input type="text" mask="0000 0000 0000 0000" matInput #input placeholder="Número Cartão">
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field appearance="fill" style="padding-left: 30px;" class="bordP4">
+                        <mat-label for="mesAno">Vencimento</mat-label>
+                        <input type="text" formControlname="mesAno" mask="00/00" matInput #input placeholder="MM/AA">
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field appearance="fill" class="bordP5">
+                        <mat-label for="codeCvc">CVC</mat-label>
+                        <input type="text" formControlname="codeCvc" mask="000" matInput #input
+                            placeholder="Código do Cartão">
+                    </mat-form-field>
+                </div>
+            </div>
+            <mat-card-content>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <form (ngSubmit)="onSubmit()">
+                            <re-captcha (resolved)="resolved($event)"
+                                siteKey="6Ld2Y0YkAAAAAFGCmdNKVngscS9NloKWFsqYXF1u"></re-captcha>
+                        </form>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </mat-card-content>
+        </mat-card-content>
+    </mat-card-content>
+    <footer>
+        <div class="row">
+            <div class="col btn-pagarPP" flFlex>
+                <button style="width: 125px;" (click)="closeModalPagamento()" mat-stroked-button type="button"
+                    class="btn btn-entrar">Voltar</button>
+            </div>
+            <div class="col btn-pagarP" flFlex>
+                <button [hidden]="!mostrarCartao" style="width: 125px;" type="button"
+                    class="btn btn-entrar btn-secondary">Pagar</button>
+            </div>
+        </div>
+    </footer>
+</app-preloader>

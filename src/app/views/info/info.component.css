@@ -1,0 +1,31 @@
+.initialI {
+    display: flex;
+    align-items: center;
+}
+
+.initialI a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 0.5em;
+    padding-left: 25px;
+}
+
+.tituloI{
+    text-align: left;
+    font-weight: 500;
+    line-height: 2.5;
+}
+
+.textoTituloI{
+    text-align: left;
+    font-weight: 400;
+}
+
+.homeI {
+    padding-top: 40px;
+    padding-left: 1em;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 1.8;
+}

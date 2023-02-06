@@ -1,0 +1,25 @@
+<body>
+
+    <div fxLayout="row" *ngFor="let item of listaInfo" fxLayoutAlign="space-between">
+        <mat-card class="homeI mat-elevation-z3" style="background: #fff; color:black !important;">
+            <div class="col" fxFlex>
+                <mat-card-content>
+                    <mat-card-title class="tituloI" style="color:black !important;"> O que é o RPG?</mat-card-title>
+                    <mat-card-title class="textoTituloI" style="color: black;">{{ item.tituloInfo }}</mat-card-title>
+                    <mat-card-subtitle>
+                        <p>{{ item.textoInfo }}</p>
+
+                    </mat-card-subtitle>
+                </mat-card-content>
+            </div>
+            <div class="col initialI">
+                <span>
+                    <a>
+                        <img class="logo" [src]="item.imagemInfo" alt="O que é?">
+                    </a>
+                </span>
+            </div>
+        </mat-card>
+    </div>
+
+</body>

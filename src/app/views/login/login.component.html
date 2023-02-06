@@ -1,0 +1,64 @@
+<body>
+    <app-preloader>
+        <div class="principalL">
+
+            <div class="login-cadastro w3-col l12 m12 s12">
+                <div class="loginL w3-col l6 m6 s12">
+                    <mat-card class="titleCard mat-elevation-z" style="background: #fff; color:black !important;">
+                        <div class=" w3-col l12 m12 s12">
+                            <div style="padding-top: 10px;">
+                                <div style="text-align: center;">
+                                    <img src="assets/img/FichaRPG.png" style="width: 500px; text-align: center;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="divmeio w3-col l7 m7 s12">
+                            <br>
+                            <p class="text-normalL">Preencha abaixo com seus dados e acesse sua conta.</p>
+                            <form class="w3-col l12 m12 s12" style="display: block;">
+                                <div class="acessarL">
+                                    <mat-form-field appearance="outline" style="width: 100%;">
+                                        <mat-label> Email </mat-label>
+                                        <input matInput placeholder="Digite seu email" type="email">
+                                    </mat-form-field>
+                                </div>
+                                <div class="acessarL">
+                                    <mat-form-field appearance="outline" style="width: 100%;">
+                                        <mat-label> Senha </mat-label>
+                                        <input placeholder="Digite sua senha" matInput
+                                            [type]="hide ? 'password' : 'text'">
+                                        <button mat-icon-button matSuffix (click)="hide = !hide"
+                                            [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                        </button>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w3-col l12 m12 s12 lembrarL">
+                                    <div class="check-lembrar">
+                                        <input type="checkbox">
+                                        <p class="text-basicL">Lembrar Senha</p>
+                                    </div>
+                                    <div class="esqueceu" style="align-self: center;">
+                                        <p class="text-basicL">Esqueceu a Senha?</p>
+                                    </div>
+                                </div>
+                                <div class="w3-col l12 m12 s12 lembrarL">
+                                    <div class="w3-col l12 m12 s6 botao-enviar">
+                                        <button (click)="cadastrar()"
+                                            class="btn btn-entrar btn-secondary">Cadastre-se</button>
+                                    </div>
+                                    <div class="botao-enviar w3-col l12 m12 s6" style="text-align: left;">
+                                        <button (click)="dash()" class="btn btn-entrar btn-secondary">Entrar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </mat-card>
+                </div>
+
+            </div>
+
+        </div>
+    </app-preloader>
+</body>
